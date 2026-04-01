@@ -33,7 +33,7 @@ import static org.awaitility.Awaitility.given;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-@AutoConfigureMockMvc
+@AutoConfigureMockMvc(addFilters = false)
 class ArtifactControllerTest {
 
     @Autowired
