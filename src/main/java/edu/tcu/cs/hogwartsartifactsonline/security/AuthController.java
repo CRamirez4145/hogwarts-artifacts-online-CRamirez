@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 @RequestMapping("{api.endpoint.base-url}/users")
 public class AuthController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(AuthController.class);
+    private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(AuthController.class);
 
     private final AuthService authService;
 
